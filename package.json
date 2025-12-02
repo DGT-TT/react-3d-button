@@ -1,0 +1,72 @@
+{
+  "name": "react-3d-button",
+  "version": "1.0.0",
+  "description": "A beautiful, customizable 3D button component for React with Next.js support, multiple themes, and easy CSS variable customization. Built on top of react-awesome-button with enhanced mobile touch support and Next.js compatibility.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/styles.css",
+    "./themes/*": "./dist/themes/*.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:js && npm run build:types && npm run build:css",
+    "build:js": "tsup",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationMap",
+    "build:css": "node scripts/build-css.js",
+    "prepublishOnly": "npm run build",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "react",
+    "button",
+    "3d",
+    "3d-button",
+    "ui",
+    "component",
+    "nextjs",
+    "react-component",
+    "typescript",
+    "themes",
+    "customizable",
+    "awesome-button",
+    "tactile",
+    "interactive"
+  ],
+  "author": "Furkan Boran",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/react-3d-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/react-3d-button/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/react-3d-button#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

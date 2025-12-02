@@ -1,0 +1,135 @@
+/* Example: Custom Theme for React 3D Button
+ * 
+ * This is a template for creating your own custom theme.
+ * Copy this file and modify the colors to match your brand.
+ */
+
+.aws-btn {
+  /* ============================================
+   * DIMENSIONS & LAYOUT
+   * ============================================ */
+  --button-default-height: 48px;
+  --button-default-font-size: 14px;
+  --button-default-line-height: 24px;
+  --button-default-border-radius: 6px;
+  --button-horizontal-padding: 20px;
+
+  /* ============================================
+   * 3D EFFECT CONFIGURATION
+   * ============================================ */
+  --button-raise-level: 6px;          /* Increase for more pronounced 3D effect */
+  --button-pressed-level: 0px;        /* Keep at 0 for full press */
+  --button-hover-pressure: 2.5;       /* Increase for more dramatic hover tilt */
+  --transform-speed: 0.2s;            /* Animation speed */
+
+  /* ============================================
+   * TYPOGRAPHY
+   * ============================================ */
+  --button-font-family: 'Your Font', system-ui, sans-serif;
+  --button-font-weight: 700;
+  --button-font-style: normal;
+  --button-letter-spacing: 0.5px;
+
+  /* ============================================
+   * SHADOW
+   * ============================================ */
+  --button-shadow-color: rgba(0, 0, 0, 0.3);
+  --button-shadow-divisor: 2;
+
+  /* ============================================
+   * PRIMARY BUTTON COLORS
+   * Replace with your brand primary color
+   * ============================================ */
+  --button-primary-color: #your-primary-color;
+  --button-primary-color-dark: #darker-shade;
+  --button-primary-color-light: #text-color;
+  --button-primary-color-hover: #hover-color;
+  --button-primary-border: none;
+
+  /* ============================================
+   * SECONDARY BUTTON COLORS
+   * ============================================ */
+  --button-secondary-color: #your-secondary-color;
+  --button-secondary-color-dark: #darker-shade;
+  --button-secondary-color-light: #text-color;
+  --button-secondary-color-hover: #hover-color;
+  --button-secondary-border: none;
+
+  /* ============================================
+   * SUCCESS BUTTON COLORS
+   * ============================================ */
+  --button-success-color: #your-success-color;
+  --button-success-color-dark: #darker-shade;
+  --button-success-color-light: #text-color;
+  --button-success-color-hover: #hover-color;
+  --button-success-border: none;
+
+  /* ============================================
+   * ERROR/DANGER BUTTON COLORS
+   * ============================================ */
+  --button-error-color: #your-error-color;
+  --button-error-color-dark: #darker-shade;
+  --button-error-color-light: #text-color;
+  --button-error-color-hover: #hover-color;
+  --button-error-border: none;
+
+  /* Danger is an alias for error */
+  --button-danger-color: var(--button-error-color);
+  --button-danger-color-dark: var(--button-error-color-dark);
+  --button-danger-color-light: var(--button-error-color-light);
+  --button-danger-color-hover: var(--button-error-color-hover);
+  --button-danger-border: var(--button-error-border);
+
+  /* ============================================
+   * WARNING BUTTON COLORS
+   * ============================================ */
+  --button-warning-color: #your-warning-color;
+  --button-warning-color-dark: #darker-shade;
+  --button-warning-color-light: #text-color;
+  --button-warning-color-hover: #hover-color;
+  --button-warning-border: none;
+
+  /* ============================================
+   * INFO BUTTON COLORS
+   * ============================================ */
+  --button-info-color: #your-info-color;
+  --button-info-color-dark: #darker-shade;
+  --button-info-color-light: #text-color;
+  --button-info-color-hover: #hover-color;
+  --button-info-border: none;
+
+  /* ============================================
+   * TERTIARY BUTTON COLORS (outlined style)
+   * ============================================ */
+  --button-tertiary-color: #your-tertiary-bg;
+  --button-tertiary-color-dark: #darker-shade;
+  --button-tertiary-color-light: #text-color;
+  --button-tertiary-color-hover: #hover-color;
+  --button-tertiary-border: 2px solid #border-color;
+
+  /* ============================================
+   * ANCHOR BUTTON COLORS (link style)
+   * ============================================ */
+  --button-anchor-color: transparent;
+  --button-anchor-color-dark: #subtle-bg;
+  --button-anchor-color-light: #link-color;
+  --button-anchor-color-hover: #hover-bg;
+  --button-anchor-border: 1px solid #border-color;
+}
+
+/* ============================================
+ * USAGE EXAMPLE
+ * ============================================
+ * 
+ * import { Button3D } from 'react-3d-button';
+ * import 'react-3d-button/styles';
+ * import './CustomTheme.css';
+ * 
+ * function App() {
+ *   return (
+ *     <Button3D type="primary">
+ *       Custom Themed Button
+ *     </Button3D>
+ *   );
+ * }
+ */

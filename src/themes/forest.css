@@ -1,0 +1,32 @@
+/* Forest Theme - Earthy greens and browns */
+.aws-btn {
+  --button-primary-color: #4caf50;
+  --button-primary-color-dark: #388e3c;
+  --button-primary-color-light: #ffffff;
+  --button-primary-color-hover: #43a047;
+
+  --button-secondary-color: #8bc34a;
+  --button-secondary-color-dark: #689f38;
+  --button-secondary-color-light: #ffffff;
+  --button-secondary-color-hover: #7cb342;
+
+  --button-success-color: #66bb6a;
+  --button-success-color-dark: #43a047;
+  --button-success-color-light: #ffffff;
+  --button-success-color-hover: #4caf50;
+
+  --button-error-color: #d84315;
+  --button-error-color-dark: #bf360c;
+  --button-error-color-light: #ffffff;
+  --button-error-color-hover: #c33c10;
+
+  --button-warning-color: #ff9800;
+  --button-warning-color-dark: #f57c00;
+  --button-warning-color-light: #ffffff;
+  --button-warning-color-hover: #fb8c00;
+
+  --button-info-color: #795548;
+  --button-info-color-dark: #5d4037;
+  --button-info-color-light: #ffffff;
+  --button-info-color-hover: #6d4c41;
+}
