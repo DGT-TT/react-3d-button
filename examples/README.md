@@ -13,6 +13,7 @@ This directory contains usage examples for the React 3D Button component.
 These examples are meant to be used as reference. To test them in your own project:
 
 1. Install the package:
+
 ```bash
 npm install react-3d-button
 ```
@@ -20,6 +21,7 @@ npm install react-3d-button
 2. Copy the example code into your React or Next.js project
 
 3. Import the necessary styles:
+
 ```tsx
 import 'react-3d-button/styles';
 // Optionally import a theme

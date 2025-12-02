@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2024-12-02
 
 ### Added
+
 - Initial release of React 3D Button
 - Button3D component with 3D press effects
 - 9 button type variants (primary, secondary, tertiary, success, error, warning, info, anchor, danger)
@@ -27,16 +28,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Usage examples for React and Next.js
 
 ### Fixed
+
 - Mobile touch event handling issues present in original react-awesome-button
 - Next.js SSR compatibility issues
 - Event handling race conditions
 
 ### Credits
+
 - Built on top of [react-awesome-button](https://github.com/rcaferati/react-awesome-button) by [@rcaferati](https://github.com/rcaferati)
 
 ## [Unreleased]
 
 ### Planned Features
+
 - More pre-built themes
 - Animation customization options
 - Keyboard navigation improvements

@@ -1,6 +1,6 @@
 # Contributing to React 3D Button
 
-Thank you for your interest in contributing! 
+Thank you for your interest in contributing!
 
 ## Getting Started
 

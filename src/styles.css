@@ -135,8 +135,7 @@ button.aws-btn .aws-btn__wrapper {
   position: absolute;
   border-radius: var(--button-default-border-radius);
   transform: skewY(0) translate3d(0, 0, 0);
-  transition:
-    transform calc(var(--transform-speed) * 0.8) ease-out,
+  transition: transform calc(var(--transform-speed) * 0.8) ease-out,
     background calc(var(--transform-speed) * 0.8) ease-out;
   pointer-events: none;
 }
@@ -165,8 +164,7 @@ button.aws-btn .aws-btn__wrapper {
   border-radius: var(--button-default-border-radius);
   bottom: calc(var(--button-raise-level) * -1);
   z-index: 1;
-  transition:
-    transform var(--transform-speed) ease-out,
+  transition: transform var(--transform-speed) ease-out,
     background var(--transform-speed) ease-out;
   pointer-events: none;
 }
@@ -199,8 +197,7 @@ button.aws-btn .aws-btn__wrapper {
   backface-visibility: hidden;
   transform-style: flat;
   transform: skew(0) translate3d(0, 0, 0);
-  transition:
-    border var(--transform-speed) ease-out,
+  transition: border var(--transform-speed) ease-out,
     transform var(--transform-speed) ease-out,
     background var(--transform-speed) ease-out,
     color var(--transform-speed) ease-out;
@@ -283,8 +280,7 @@ button.aws-btn .aws-btn__wrapper {
 
 .aws-btn--active .aws-btn__content {
   will-change: transform;
-  transition:
-    transform calc(var(--transform-speed) * 0.5) ease-in,
+  transition: transform calc(var(--transform-speed) * 0.5) ease-in,
     background calc(var(--transform-speed) * 0.5) ease-out,
     color calc(var(--transform-speed) * 0.5) ease-out;
   transform: translate3d(

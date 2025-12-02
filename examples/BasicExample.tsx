@@ -12,26 +12,41 @@ export default function BasicExample() {
   return (
     <div style={{ padding: '40px', fontFamily: 'system-ui, sans-serif' }}>
       <h1>React 3D Button Examples</h1>
-      
+
       <section style={{ marginBottom: '40px' }}>
         <h2>Button Types</h2>
         <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-          <Button3D type="primary" onPress={() => console.log('Primary pressed')}>
+          <Button3D
+            type="primary"
+            onPress={() => console.log('Primary pressed')}
+          >
             Primary
           </Button3D>
-          <Button3D type="secondary" onPress={() => console.log('Secondary pressed')}>
+          <Button3D
+            type="secondary"
+            onPress={() => console.log('Secondary pressed')}
+          >
             Secondary
           </Button3D>
-          <Button3D type="tertiary" onPress={() => console.log('Tertiary pressed')}>
+          <Button3D
+            type="tertiary"
+            onPress={() => console.log('Tertiary pressed')}
+          >
             Tertiary
           </Button3D>
-          <Button3D type="success" onPress={() => console.log('Success pressed')}>
+          <Button3D
+            type="success"
+            onPress={() => console.log('Success pressed')}
+          >
             Success
           </Button3D>
           <Button3D type="error" onPress={() => console.log('Error pressed')}>
             Error
           </Button3D>
-          <Button3D type="warning" onPress={() => console.log('Warning pressed')}>
+          <Button3D
+            type="warning"
+            onPress={() => console.log('Warning pressed')}
+          >
             Warning
           </Button3D>
           <Button3D type="info" onPress={() => console.log('Info pressed')}>
@@ -45,7 +60,14 @@ export default function BasicExample() {
 
       <section style={{ marginBottom: '40px' }}>
         <h2>Button Sizes</h2>
-        <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+        <div
+          style={{
+            display: 'flex',
+            gap: '12px',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+          }}
+        >
           <Button3D type="primary" size="small">
             Small
           </Button3D>
@@ -61,10 +83,15 @@ export default function BasicExample() {
       <section style={{ marginBottom: '40px' }}>
         <h2>With Icons (Using Simple SVG)</h2>
         <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-          <Button3D 
+          <Button3D
             type="primary"
             before={
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
@@ -73,10 +100,17 @@ export default function BasicExample() {
           >
             Download
           </Button3D>
-          <Button3D 
+          <Button3D
             type="success"
             after={
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <polyline points="9 18 15 12 9 6" />
               </svg>
             }
@@ -134,11 +168,25 @@ export default function BasicExample() {
         </div>
       </section>
 
-      <div style={{ marginTop: '60px', padding: '20px', background: '#f5f5f5', borderRadius: '8px' }}>
+      <div
+        style={{
+          marginTop: '60px',
+          padding: '20px',
+          background: '#f5f5f5',
+          borderRadius: '8px',
+        }}
+      >
         <h3>To try different themes:</h3>
         <p>Uncomment one of the theme imports at the top of this file:</p>
-        <pre style={{ background: '#fff', padding: '12px', borderRadius: '4px', overflow: 'auto' }}>
-{`// import '../src/themes/ocean.css';
+        <pre
+          style={{
+            background: '#fff',
+            padding: '12px',
+            borderRadius: '4px',
+            overflow: 'auto',
+          }}
+        >
+          {`// import '../src/themes/ocean.css';
 // import '../src/themes/sunset.css';
 // import '../src/themes/forest.css';
 // import '../src/themes/pirate.css';

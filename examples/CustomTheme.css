@@ -17,10 +17,10 @@
   /* ============================================
    * 3D EFFECT CONFIGURATION
    * ============================================ */
-  --button-raise-level: 6px;          /* Increase for more pronounced 3D effect */
-  --button-pressed-level: 0px;        /* Keep at 0 for full press */
-  --button-hover-pressure: 2.5;       /* Increase for more dramatic hover tilt */
-  --transform-speed: 0.2s;            /* Animation speed */
+  --button-raise-level: 6px; /* Increase for more pronounced 3D effect */
+  --button-pressed-level: 0px; /* Keep at 0 for full press */
+  --button-hover-pressure: 2.5; /* Increase for more dramatic hover tilt */
+  --transform-speed: 0.2s; /* Animation speed */
 
   /* ============================================
    * TYPOGRAPHY

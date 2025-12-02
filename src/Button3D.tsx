@@ -53,7 +53,17 @@ export type Button3DProps = {
   rootElement?: string;
   size?: string | null;
   style?: React.CSSProperties;
-  type?: 'primary' | 'secondary' | 'tertiary' | 'success' | 'error' | 'warning' | 'info' | 'anchor' | 'danger' | string;
+  type?:
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
+    | 'success'
+    | 'error'
+    | 'warning'
+    | 'info'
+    | 'anchor'
+    | 'danger'
+    | string;
   visible?: boolean;
 };
 
@@ -401,8 +411,8 @@ const Button3D = ({
           event.pageX < left + width * 0.3
             ? 'left'
             : event.pageX > left + width * 0.65
-              ? 'right'
-              : 'middle';
+            ? 'right'
+            : 'middle';
 
         toggleMoveClasses({
           element: container.current,
@@ -445,7 +455,7 @@ const Button3D = ({
     <RenderComponent
       style={style}
       className={getRootClassName}
-      role='button'
+      role="button"
       ref={container}
       {...containerProps}
       {...extraProps}

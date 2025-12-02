@@ -23,7 +23,7 @@ if (!fs.existsSync(themesDistDir)) {
 const themesSourceDir = path.join(__dirname, '..', 'src', 'themes');
 const themeFiles = fs.readdirSync(themesSourceDir);
 
-themeFiles.forEach(file => {
+themeFiles.forEach((file) => {
   if (file.endsWith('.css')) {
     const source = path.join(themesSourceDir, file);
     const dest = path.join(themesDistDir, file);

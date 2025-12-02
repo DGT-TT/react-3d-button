@@ -91,18 +91,18 @@ Override CSS variables to create your own theme:
   --button-primary-color-dark: #darker-shade;
   --button-primary-color-light: #text-color;
   --button-primary-color-hover: #hover-color;
-  
+
   /* 3D effect customization */
   --button-raise-level: 6px; /* Height of the 3D effect */
   --button-hover-pressure: 3; /* Intensity of hover tilt */
-  
+
   /* Border radius */
   --button-default-border-radius: 8px;
-  
+
   /* Typography */
   --button-font-family: 'Your Font', sans-serif;
   --button-font-weight: 700;
-  
+
   /* And many more... see full list below */
 }
 ```
@@ -111,29 +111,29 @@ Override CSS variables to create your own theme:
 
 ### Button3DProps
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `type` | `'primary' \| 'secondary' \| 'tertiary' \| 'success' \| 'error' \| 'warning' \| 'info' \| 'anchor' \| 'danger'` | `'primary'` | Button variant |
-| `size` | `'small' \| 'medium' \| 'large' \| string` | `undefined` | Button size |
-| `disabled` | `boolean` | `false` | Disable the button |
-| `active` | `boolean` | `false` | Keep button in pressed state |
-| `visible` | `boolean` | `true` | Control button visibility |
-| `ripple` | `boolean` | `false` | Enable ripple effect on press |
-| `moveEvents` | `boolean` | `true` | Enable 3D tilt on mouse move |
-| `href` | `string` | `undefined` | Render as anchor tag with href |
-| `onPress` | `(event) => void` | `undefined` | Callback when button is pressed |
-| `onPressed` | `(event) => void` | `undefined` | Callback when press animation starts |
-| `onReleased` | `(element) => void` | `undefined` | Callback when button is released |
-| `onMouseDown` | `(event) => void` | `undefined` | Mouse down event handler |
-| `onMouseUp` | `(event) => void` | `undefined` | Mouse up event handler |
-| `before` | `ReactNode` | `undefined` | Content before children (e.g., icon) |
-| `after` | `ReactNode` | `undefined` | Content after children (e.g., icon) |
-| `between` | `boolean` | `false` | Space between before/after content |
-| `className` | `string` | `undefined` | Additional CSS classes |
-| `style` | `CSSProperties` | `undefined` | Inline styles |
-| `placeholder` | `boolean` | `true` | Show placeholder when no children |
-| `containerProps` | `HTMLAttributes` | `{}` | Props passed to container element |
-| `cssModule` | `any` | `undefined` | CSS module object for scoped styles |
+| Prop             | Type                                                                                                            | Default     | Description                          |
+| ---------------- | --------------------------------------------------------------------------------------------------------------- | ----------- | ------------------------------------ |
+| `type`           | `'primary' \| 'secondary' \| 'tertiary' \| 'success' \| 'error' \| 'warning' \| 'info' \| 'anchor' \| 'danger'` | `'primary'` | Button variant                       |
+| `size`           | `'small' \| 'medium' \| 'large' \| string`                                                                      | `undefined` | Button size                          |
+| `disabled`       | `boolean`                                                                                                       | `false`     | Disable the button                   |
+| `active`         | `boolean`                                                                                                       | `false`     | Keep button in pressed state         |
+| `visible`        | `boolean`                                                                                                       | `true`      | Control button visibility            |
+| `ripple`         | `boolean`                                                                                                       | `false`     | Enable ripple effect on press        |
+| `moveEvents`     | `boolean`                                                                                                       | `true`      | Enable 3D tilt on mouse move         |
+| `href`           | `string`                                                                                                        | `undefined` | Render as anchor tag with href       |
+| `onPress`        | `(event) => void`                                                                                               | `undefined` | Callback when button is pressed      |
+| `onPressed`      | `(event) => void`                                                                                               | `undefined` | Callback when press animation starts |
+| `onReleased`     | `(element) => void`                                                                                             | `undefined` | Callback when button is released     |
+| `onMouseDown`    | `(event) => void`                                                                                               | `undefined` | Mouse down event handler             |
+| `onMouseUp`      | `(event) => void`                                                                                               | `undefined` | Mouse up event handler               |
+| `before`         | `ReactNode`                                                                                                     | `undefined` | Content before children (e.g., icon) |
+| `after`          | `ReactNode`                                                                                                     | `undefined` | Content after children (e.g., icon)  |
+| `between`        | `boolean`                                                                                                       | `false`     | Space between before/after content   |
+| `className`      | `string`                                                                                                        | `undefined` | Additional CSS classes               |
+| `style`          | `CSSProperties`                                                                                                 | `undefined` | Inline styles                        |
+| `placeholder`    | `boolean`                                                                                                       | `true`      | Show placeholder when no children    |
+| `containerProps` | `HTMLAttributes`                                                                                                | `{}`        | Props passed to container element    |
+| `cssModule`      | `any`                                                                                                           | `undefined` | CSS module object for scoped styles  |
 
 ## 🎯 Examples
 
@@ -163,15 +163,15 @@ Override CSS variables to create your own theme:
 ```tsx
 import { ArrowRight, Download } from 'lucide-react';
 
-<Button3D 
-  type="primary" 
+<Button3D
+  type="primary"
   before={<Download size={16} />}
 >
   Download
 </Button3D>
 
-<Button3D 
-  type="primary" 
+<Button3D
+  type="primary"
   after={<ArrowRight size={16} />}
 >
   Next
@@ -189,11 +189,7 @@ import { ArrowRight, Download } from 'lucide-react';
 ### With Ripple Effect
 
 ```tsx
-<Button3D 
-  type="primary" 
-  ripple={true}
-  onPress={() => console.log('Pressed!')}
->
+<Button3D type="primary" ripple={true} onPress={() => console.log('Pressed!')}>
   Click for Ripple
 </Button3D>
 ```
@@ -203,13 +199,13 @@ import { ArrowRight, Download } from 'lucide-react';
 ```tsx
 const [isActive, setIsActive] = useState(false);
 
-<Button3D 
-  type="primary" 
+<Button3D
+  type="primary"
   active={isActive}
   onPress={() => setIsActive(!isActive)}
 >
   Toggle Active
-</Button3D>
+</Button3D>;
 ```
 
 ## 🎨 CSS Variables Reference
@@ -226,10 +222,10 @@ const [isActive, setIsActive] = useState(false);
 ### 3D Effect
 
 ```css
---button-raise-level: 5px;          /* Height of 3D effect */
---button-pressed-level: 0px;        /* Depth when pressed */
---button-hover-pressure: 2;         /* Hover tilt intensity */
---transform-speed: 0.185s;          /* Animation speed */
+--button-raise-level: 5px; /* Height of 3D effect */
+--button-pressed-level: 0px; /* Depth when pressed */
+--button-hover-pressure: 2; /* Hover tilt intensity */
+--transform-speed: 0.185s; /* Animation speed */
 ```
 
 ### Typography
@@ -254,7 +250,7 @@ For each button type (primary, secondary, success, error, warning, info, anchor,
 
 ## 🙏 Credits
 
-This component is built on top of the excellent [react-awesome-button](https://github.com/rcaferati/react-awesome-button) library by [@rcaferati](https://github.com/rcaferati). 
+This component is built on top of the excellent [react-awesome-button](https://github.com/rcaferati/react-awesome-button) library by [@rcaferati](https://github.com/rcaferati).
 
 ### Improvements Made
 
@@ -281,8 +277,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📮 Contact
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- Twitter: [@YOUR_TWITTER](https://twitter.com/YOUR_TWITTER)
+- GitHub: [@boranfurkan](https://github.com/boranfurkan)
 
 ---
 

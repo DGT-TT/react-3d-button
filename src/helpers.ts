@@ -41,7 +41,7 @@ export function toggleMoveClasses({
       classToModules([`${root}--${POSITION_STATES[1]}`], cssModule),
       classToModules([`${root}--${POSITION_STATES[2]}`], cssModule),
     ];
-    states.forEach(state => {
+    states.forEach((state) => {
       if (state) {
         element.classList.remove(state);
       }
@@ -49,7 +49,7 @@ export function toggleMoveClasses({
     return false;
   }
 
-  const options = POSITION_STATES.filter(item => item !== state);
+  const options = POSITION_STATES.filter((item) => item !== state);
   let i = options.length;
   while (i--) {
     const cls = classToModules([`${root}--${options[i]}`], cssModule);
@@ -71,7 +71,7 @@ export function setCssEndEvent(
   type: string,
   options: { tolerance?: number } = {}
 ): Promise<void> {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     if (!element) {
       resolve();
       return;
