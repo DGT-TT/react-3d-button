@@ -12,7 +12,12 @@
       "require": "./dist/index.js"
     },
     "./styles": "./dist/styles.css",
-    "./themes/*": "./dist/themes/*.css"
+    "./themes/ocean.css": "./dist/themes/ocean.css",
+    "./themes/sunset.css": "./dist/themes/sunset.css",
+    "./themes/forest.css": "./dist/themes/forest.css",
+    "./themes/pirate.css": "./dist/themes/pirate.css",
+    "./themes/neon.css": "./dist/themes/neon.css",
+    "./dist/*": "./dist/*"
   },
   "files": [
     "dist",
