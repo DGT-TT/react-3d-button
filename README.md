@@ -23,6 +23,7 @@ A beautiful, customizable 3D button component for React with Next.js support, mu
 ## 🎯 Use Cases
 
 Perfect for:
+
 - ✅ Landing pages and marketing sites
 - ✅ SaaS dashboards and admin panels
 - ✅ E-commerce checkout flows
@@ -90,13 +91,13 @@ The theme will automatically override the default colors for all button types.
 
 ### Available Themes
 
-| Theme | Import Path | Description |
-|-------|-------------|-------------|
-| Ocean | `react-3d-button/themes/ocean.css` | Cool blues and teals - perfect for marine or tech apps |
-| Sunset | `react-3d-button/themes/sunset.css` | Warm oranges and purples - energetic and vibrant |
-| Forest | `react-3d-button/themes/forest.css` | Earthy greens and browns - natural and calming |
-| Pirate | `react-3d-button/themes/pirate.css` | Rich browns and tans - adventurous theme |
-| Neon | `react-3d-button/themes/neon.css` | Vibrant neon colors - bold and modern |
+| Theme  | Import Path                         | Description                                            |
+| ------ | ----------------------------------- | ------------------------------------------------------ |
+| Ocean  | `react-3d-button/themes/ocean.css`  | Cool blues and teals - perfect for marine or tech apps |
+| Sunset | `react-3d-button/themes/sunset.css` | Warm oranges and purples - energetic and vibrant       |
+| Forest | `react-3d-button/themes/forest.css` | Earthy greens and browns - natural and calming         |
+| Pirate | `react-3d-button/themes/pirate.css` | Rich browns and tans - adventurous theme               |
+| Neon   | `react-3d-button/themes/neon.css`   | Vibrant neon colors - bold and modern                  |
 
 **[👀 Preview all themes live →](https://react-3d-button-demo.vercel.app/themes)**
 
@@ -300,11 +301,11 @@ For each button type (`primary`, `secondary`, `tertiary`, `success`, `error`, `w
 
 ```css
 .aws-btn {
-  --button-primary-color: #10b981;        /* Green background */
-  --button-primary-color-dark: #059669;   /* Darker green shadow */
-  --button-primary-color-light: #ffffff;  /* White text */
-  --button-primary-color-hover: #0d9668;  /* Hover state */
-  --button-raise-level: 8px;              /* More pronounced 3D */
+  --button-primary-color: #10b981; /* Green background */
+  --button-primary-color-dark: #059669; /* Darker green shadow */
+  --button-primary-color-light: #ffffff; /* White text */
+  --button-primary-color-hover: #0d9668; /* Hover state */
+  --button-raise-level: 8px; /* More pronounced 3D */
 }
 ```
 
@@ -317,6 +318,7 @@ For a complete list of all available CSS variables, check the [source styles.css
 ### Styles Not Loading
 
 Make sure to import the base styles:
+
 ```tsx
 import 'react-3d-button/styles';
 ```
@@ -324,6 +326,7 @@ import 'react-3d-button/styles';
 ### Button Not Showing Up
 
 Ensure you've wrapped your Next.js component with `'use client'` directive:
+
 ```tsx
 'use client';
 
@@ -333,6 +336,7 @@ import { Button3D } from 'react-3d-button';
 ### TypeScript Errors
 
 If you encounter type errors with the `style` prop when using CSS variables:
+
 ```tsx
 <div style={{ '--button-primary-color': '#ff0000' } as React.CSSProperties}>
   <Button3D type="primary">Custom Color</Button3D>
@@ -342,14 +346,15 @@ If you encounter type errors with the `style` prop when using CSS variables:
 ### Theme Not Applying
 
 Themes use CSS cascade, so import order matters:
+
 ```tsx
 // ✅ Correct order
-import 'react-3d-button/styles';        // Base styles first
+import 'react-3d-button/styles'; // Base styles first
 import 'react-3d-button/themes/ocean.css'; // Theme second
 
 // ❌ Wrong order
 import 'react-3d-button/themes/ocean.css';
-import 'react-3d-button/styles';        // This will override the theme
+import 'react-3d-button/styles'; // This will override the theme
 ```
 
 ## 🙏 Credits
