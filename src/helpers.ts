@@ -1,10 +1,15 @@
-const POSITION_STATES = ['middle', 'left', 'right'];
+import type * as React from 'react';
 
-export function classToModules(className: any[] = [], cssModule: any) {
+const POSITION_STATES = ['middle', 'left', 'right'] as const;
+
+export function classToModules(
+  className: string[] = [],
+  cssModule?: Record<string, string> | null
+): string {
   if (!cssModule) {
     return className.join(' ').trim();
   }
-  const ClassName = [];
+  const ClassName: string[] = [];
   let i = className.length;
   while (i--) {
     if (cssModule[className[i]]) {
@@ -14,7 +19,10 @@ export function classToModules(className: any[] = [], cssModule: any) {
   return ClassName.join(' ').trim();
 }
 
-export function getClassName(className = '', cssModule: any) {
+export function getClassName(
+  className = '',
+  cssModule?: Record<string, string> | null
+): string {
   if (cssModule) {
     return cssModule[className] || className;
   }
@@ -29,10 +37,10 @@ export function toggleMoveClasses({
 }: {
   element: HTMLElement | null;
   root: string;
-  cssModule?: any;
+  cssModule?: Record<string, string> | null;
   state?: string | null;
-}) {
-  if (!element?.classList?.remove) {
+}): boolean {
+  if (!element?.classList) {
     return false;
   }
   if (!state) {
@@ -67,8 +75,8 @@ export function toggleMoveClasses({
 }
 
 export function setCssEndEvent(
-  element: HTMLElement,
-  type: string,
+  element: HTMLElement | null,
+  type: 'transition' | 'animation',
   options: { tolerance?: number } = {}
 ): Promise<void> {
   return new Promise((resolve) => {
@@ -77,7 +85,7 @@ export function setCssEndEvent(
       return;
     }
 
-    const eventMap: { [key: string]: string } = {
+    const eventMap: Record<'transition' | 'animation', string> = {
       transition: 'transitionend',
       animation: 'animationend',
     };
@@ -90,22 +98,32 @@ export function setCssEndEvent(
 
     const tolerance = options.tolerance || 0;
     let count = 0;
+    let timeoutId: NodeJS.Timeout | null = null;
+    let resolved = false;
+
+    const cleanup = () => {
+      if (!resolved) {
+        resolved = true;
+        element.removeEventListener(eventName, handler);
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+          timeoutId = null;
+        }
+        resolve();
+      }
+    };
 
     const handler = () => {
       count++;
       if (count > tolerance) {
-        element.removeEventListener(eventName, handler);
-        resolve();
+        cleanup();
       }
     };
 
     element.addEventListener(eventName, handler);
 
     // Fallback timeout
-    setTimeout(() => {
-      element.removeEventListener(eventName, handler);
-      resolve();
-    }, 1000);
+    timeoutId = setTimeout(cleanup, 1000);
   });
 }
 

@@ -28,3 +28,7 @@ coverage/
 # Misc
 *.tgz
 .npmrc
+
+# Package testing
+*.tgz.json
+package/

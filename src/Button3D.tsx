@@ -35,11 +35,9 @@ export type Button3DProps = {
   children?: React.ReactNode;
   className?: string | null;
   containerProps?: React.HTMLAttributes<HTMLElement>;
-  cssModule?: any;
+  cssModule?: Record<string, string> | null;
   disabled?: boolean;
-  element?: React.ForwardRefExoticComponent<
-    React.RefAttributes<HTMLAnchorElement | HTMLDivElement | HTMLButtonElement>
-  > | null;
+  element?: React.ElementType | null;
   extra?: React.ReactNode;
   href?: string | null;
   moveEvents?: boolean;
@@ -51,7 +49,7 @@ export type Button3DProps = {
   placeholder?: boolean;
   ripple?: boolean;
   rootElement?: string;
-  size?: string | null;
+  size?: 'small' | 'medium' | 'large' | string | null;
   style?: React.CSSProperties;
   type?:
     | 'primary'
@@ -62,8 +60,7 @@ export type Button3DProps = {
     | 'warning'
     | 'info'
     | 'anchor'
-    | 'danger'
-    | string;
+    | 'danger';
   visible?: boolean;
 };
 
@@ -480,3 +477,4 @@ const Button3D = ({
 };
 
 export default Button3D;
+export { Button3D };

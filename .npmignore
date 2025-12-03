@@ -1,0 +1,40 @@
+# Source files (already in files field, but explicit is better)
+src/
+examples/
+scripts/
+
+# Development files
+.github/
+.vscode/
+.idea/
+*.log
+.DS_Store
+*.swp
+*.swo
+
+# Config files
+tsconfig.json
+tsup.config.ts
+.gitignore
+.npmignore
+
+# Documentation for development
+CONTRIBUTING.md
+CHANGELOG.md
+
+# Build artifacts
+*.tsbuildinfo
+.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Misc
+.env*
+*.tgz
+.npmrc
