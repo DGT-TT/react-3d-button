@@ -1,6 +1,6 @@
 {
   "name": "react-3d-button",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A beautiful, customizable 3D button component for React with Next.js support, toggle mode, multiple themes, and easy CSS variable customization. Built on top of react-awesome-button with enhanced mobile touch support and Next.js compatibility.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -17,6 +17,11 @@
     "./themes/forest.css": "./dist/themes/forest.css",
     "./themes/pirate.css": "./dist/themes/pirate.css",
     "./themes/neon.css": "./dist/themes/neon.css",
+    "./themes/ocean.global.css": "./dist/themes/ocean.global.css",
+    "./themes/sunset.global.css": "./dist/themes/sunset.global.css",
+    "./themes/forest.global.css": "./dist/themes/forest.global.css",
+    "./themes/pirate.global.css": "./dist/themes/pirate.global.css",
+    "./themes/neon.global.css": "./dist/themes/neon.global.css",
     "./dist/*": "./dist/*"
   },
   "files": [

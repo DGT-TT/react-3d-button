@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2024-12-13
+
+### Added
+
+- **Global theme variants** - New `.global.css` files for all themes that apply globally when imported
+  - `themes/ocean.global.css`
+  - `themes/sunset.global.css`
+  - `themes/forest.global.css`
+  - `themes/pirate.global.css`
+  - `themes/neon.global.css`
+- `THEME_GUIDE.md` - Comprehensive guide explaining both global and scoped theme usage
+
+### Fixed
+
+- Theme import confusion - themes now work as expected when imported globally using `.global.css` variants
+- Clarified theme usage in README with both global and scoped approaches
+
+### Changed
+
+- Updated documentation to explain the difference between global and scoped theme imports
+- Enhanced theme table in README with both import options
+
 ## [1.0.0] - 2024-12-02
 
 ### Added

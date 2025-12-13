@@ -1,0 +1,72 @@
+/* Pirate Theme - Global Application
+ * Import this file to apply the pirate theme globally to all buttons
+ * Example: import 'react-3d-button/themes/pirate.global.css';
+ */
+
+.aws-btn {
+  /* Primary - Chamoisee/Coyote (Rich brown, main action) */
+  --button-primary-color: #a07e56;
+  --button-primary-color-dark: #604134;
+  --button-primary-color-light: #f6ede4;
+  --button-primary-color-hover: #825c43;
+  --button-primary-border: none;
+
+  /* Secondary - Dutch White/Tan (Light tan, secondary action) */
+  --button-secondary-color: #eadaba;
+  --button-secondary-color-dark: #a07e56;
+  --button-secondary-color-light: #604134;
+  --button-secondary-color-hover: #d7bd96;
+  --button-secondary-border: none;
+
+  /* Tertiary - Champagne (Elegant cream, subtle action) */
+  --button-tertiary-color: #f7ead0;
+  --button-tertiary-color-dark: #d7bd96;
+  --button-tertiary-color-light: #604134;
+  --button-tertiary-color-hover: #eadaba;
+  --button-tertiary-border: 1px solid #a07e56;
+
+  /* Success - Enhanced Coyote/Tan (Earthy success) */
+  --button-success-color: #8d9b6c;
+  --button-success-color-dark: #5a6b3a;
+  --button-success-color-light: #f6ede4;
+  --button-success-color-hover: #7a8959;
+  --button-success-border: none;
+
+  /* Error/Danger - Rich Red-Brown (Danger, destructive action) */
+  --button-error-color: #a84432;
+  --button-error-color-dark: #6b2d20;
+  --button-error-color-light: #f6ede4;
+  --button-error-color-hover: #8f3a2a;
+  --button-error-border: none;
+
+  /* Warning - Warm Tan (Caution) */
+  --button-warning-color: #d7a256;
+  --button-warning-color-dark: #a07e56;
+  --button-warning-color-light: #3a312a;
+  --button-warning-color-hover: #c49347;
+  --button-warning-border: none;
+
+  /* Info - Cool Liver/Van Dyke (Information) */
+  --button-info-color: #7a6a5f;
+  --button-info-color-dark: #3a312a;
+  --button-info-color-light: #f3e7db;
+  --button-info-color-hover: #604134;
+  --button-info-border: none;
+
+  /* Anchor - Linen/Champagne (Link style) */
+  --button-anchor-color: #f6ede4;
+  --button-anchor-color-dark: #d7bd96;
+  --button-anchor-color-light: #604134;
+  --button-anchor-color-hover: #f3e7db;
+  --button-anchor-border: 1px solid #a07e56;
+
+  /* Danger (alias for error) */
+  --button-danger-color: #a84432;
+  --button-danger-color-dark: #6b2d20;
+  --button-danger-color-light: #f6ede4;
+  --button-danger-color-hover: #8f3a2a;
+  --button-danger-border: none;
+
+  --button-placeholder-color: #d7bd96;
+  --button-placeholder-color-light: #a07e56;
+}

@@ -78,45 +78,63 @@ export default function MyComponent() {
 
 ## 🎨 Using Themes
 
-### Import a Pre-built Theme
+React 3D Button supports two ways to apply themes: **global** (affects all buttons) or **scoped** (affects specific sections).
 
-Simply import the theme CSS file after the base styles:
+### Option 1: Global Theme (Recommended for Single-Theme Apps)
+
+Apply a theme globally to all buttons in your app by importing the `.global.css` variant:
 
 ```tsx
 import { Button3D } from 'react-3d-button';
 import 'react-3d-button/styles';
-import 'react-3d-button/themes/ocean.css'; // Add your theme
+import 'react-3d-button/themes/pirate.global.css'; // ⚡ Applies to ALL buttons
+
+function App() {
+  return (
+    <>
+      <Button3D type="primary">Pirate Button</Button3D>
+      <Button3D type="success">Also Pirate</Button3D>
+    </>
+  );
+}
 ```
 
-The theme will automatically override the default colors for all button types.
+### Option 2: Scoped Theme (For Multi-Theme Apps)
+
+Apply themes to specific sections by wrapping buttons in a theme class:
+
+```tsx
+import { Button3D } from 'react-3d-button';
+import 'react-3d-button/styles';
+import 'react-3d-button/themes/ocean.css'; // Scoped theme
+import 'react-3d-button/themes/sunset.css'; // Another scoped theme
+
+function App() {
+  return (
+    <>
+      <div className="theme-ocean">
+        <Button3D type="primary">Ocean Button</Button3D>
+      </div>
+
+      <div className="theme-sunset">
+        <Button3D type="primary">Sunset Button</Button3D>
+      </div>
+    </>
+  );
+}
+```
 
 ### Available Themes
 
-| Theme  | Import Path                         | Description                                            |
-| ------ | ----------------------------------- | ------------------------------------------------------ |
-| Ocean  | `react-3d-button/themes/ocean.css`  | Cool blues and teals - perfect for marine or tech apps |
-| Sunset | `react-3d-button/themes/sunset.css` | Warm oranges and purples - energetic and vibrant       |
-| Forest | `react-3d-button/themes/forest.css` | Earthy greens and browns - natural and calming         |
-| Pirate | `react-3d-button/themes/pirate.css` | Rich browns and tans - adventurous theme               |
-| Neon   | `react-3d-button/themes/neon.css`   | Vibrant neon colors - bold and modern                  |
+| Theme  | Global Import                              | Scoped Import                       | Description                                            |
+| ------ | ------------------------------------------ | ----------------------------------- | ------------------------------------------------------ |
+| Ocean  | `react-3d-button/themes/ocean.global.css`  | `react-3d-button/themes/ocean.css`  | Cool blues and teals - perfect for marine or tech apps |
+| Sunset | `react-3d-button/themes/sunset.global.css` | `react-3d-button/themes/sunset.css` | Warm oranges and purples - energetic and vibrant       |
+| Forest | `react-3d-button/themes/forest.global.css` | `react-3d-button/themes/forest.css` | Earthy greens and browns - natural and calming         |
+| Pirate | `react-3d-button/themes/pirate.global.css` | `react-3d-button/themes/pirate.css` | Rich browns and tans - adventurous theme               |
+| Neon   | `react-3d-button/themes/neon.global.css`   | `react-3d-button/themes/neon.css`   | Vibrant neon colors - bold and modern                  |
 
 **[👀 Preview all themes live →](https://react-3d-button-demo.vercel.app/themes)**
-
-### Apply Theme to Specific Section
-
-You can scope themes to specific parts of your app:
-
-```tsx
-// Wrap buttons in a themed container
-<div className="theme-ocean">
-  <Button3D type="primary">Ocean Themed</Button3D>
-  <Button3D type="secondary">Also Ocean</Button3D>
-</div>
-
-<div className="theme-sunset">
-  <Button3D type="primary">Sunset Themed</Button3D>
-</div>
-```
 
 ### Create a Custom Theme
 

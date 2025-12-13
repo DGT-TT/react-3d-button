@@ -1,0 +1,36 @@
+/* Sunset Theme - Global Application
+ * Import this file to apply the sunset theme globally to all buttons
+ * Example: import 'react-3d-button/themes/sunset.global.css';
+ */
+
+.aws-btn {
+  --button-primary-color: #ff6b6b;
+  --button-primary-color-dark: #ee5a5a;
+  --button-primary-color-light: #ffffff;
+  --button-primary-color-hover: #ee5a5a;
+
+  --button-secondary-color: #f06292;
+  --button-secondary-color-dark: #ec407a;
+  --button-secondary-color-light: #ffffff;
+  --button-secondary-color-hover: #ec407a;
+
+  --button-success-color: #4ecdc4;
+  --button-success-color-dark: #3bb4ab;
+  --button-success-color-light: #ffffff;
+  --button-success-color-hover: #3bb4ab;
+
+  --button-error-color: #ff5252;
+  --button-error-color-dark: #ff1744;
+  --button-error-color-light: #ffffff;
+  --button-error-color-hover: #ff1744;
+
+  --button-warning-color: #ffa726;
+  --button-warning-color-dark: #fb8c00;
+  --button-warning-color-light: #ffffff;
+  --button-warning-color-hover: #fb8c00;
+
+  --button-info-color: #ab47bc;
+  --button-info-color-dark: #8e24aa;
+  --button-info-color-light: #ffffff;
+  --button-info-color-hover: #8e24aa;
+}

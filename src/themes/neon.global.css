@@ -1,0 +1,36 @@
+/* Neon Theme - Global Application
+ * Import this file to apply the neon theme globally to all buttons
+ * Example: import 'react-3d-button/themes/neon.global.css';
+ */
+
+.aws-btn {
+  --button-primary-color: #00ffff;
+  --button-primary-color-dark: #00cccc;
+  --button-primary-color-light: #000000;
+  --button-primary-color-hover: #00e6e6;
+
+  --button-secondary-color: #ff00ff;
+  --button-secondary-color-dark: #cc00cc;
+  --button-secondary-color-light: #ffffff;
+  --button-secondary-color-hover: #e600e6;
+
+  --button-success-color: #00ff00;
+  --button-success-color-dark: #00cc00;
+  --button-success-color-light: #000000;
+  --button-success-color-hover: #00e600;
+
+  --button-error-color: #ff0066;
+  --button-error-color-dark: #cc0052;
+  --button-error-color-light: #ffffff;
+  --button-error-color-hover: #e6005c;
+
+  --button-warning-color: #ffff00;
+  --button-warning-color-dark: #cccc00;
+  --button-warning-color-light: #000000;
+  --button-warning-color-hover: #e6e600;
+
+  --button-info-color: #9d00ff;
+  --button-info-color-dark: #7d00cc;
+  --button-info-color-light: #ffffff;
+  --button-info-color-hover: #8c00e6;
+}

@@ -1,0 +1,36 @@
+/* Ocean Theme - Global Application
+ * Import this file to apply the ocean theme globally to all buttons
+ * Example: import 'react-3d-button/themes/ocean.global.css';
+ */
+
+.aws-btn {
+  --button-primary-color: #0077be;
+  --button-primary-color-dark: #005a8f;
+  --button-primary-color-light: #ffffff;
+  --button-primary-color-hover: #006aa8;
+
+  --button-secondary-color: #4db8e8;
+  --button-secondary-color-dark: #0077be;
+  --button-secondary-color-light: #ffffff;
+  --button-secondary-color-hover: #3aa5d6;
+
+  --button-success-color: #26a69a;
+  --button-success-color-dark: #00897b;
+  --button-success-color-light: #ffffff;
+  --button-success-color-hover: #00897b;
+
+  --button-error-color: #e74c3c;
+  --button-error-color-dark: #c0392b;
+  --button-error-color-light: #ffffff;
+  --button-error-color-hover: #d62c1a;
+
+  --button-warning-color: #f39c12;
+  --button-warning-color-dark: #e67e22;
+  --button-warning-color-light: #ffffff;
+  --button-warning-color-hover: #e67e22;
+
+  --button-info-color: #3498db;
+  --button-info-color-dark: #2980b9;
+  --button-info-color-light: #ffffff;
+  --button-info-color-hover: #2980b9;
+}
